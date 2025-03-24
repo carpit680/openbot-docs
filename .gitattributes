@@ -1,0 +1,2 @@
+static/vid/*.mp4 filter=lfs diff=lfs merge=lfs -text
+static/vid/*.gif filter=lfs diff=lfs merge=lfs -text
