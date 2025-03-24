@@ -3,36 +3,36 @@ import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 const FeatureList = [
-  {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
+	{
+		title: "Open-Source",
+		Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+		description: (
+			<>
+				Hardware, software, and design files are open-source, allowing anyone to
+				customize, experiment, and innovate freely.
+			</>
+		),
+	},
+	{
+		title: "Affordable",
+		Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+		description: (
+			<>
+				Our projects are designed to be low-cost for research and tinkering
+				without compromising on quality.
+			</>
+		),
+	},
+	{
+		title: "End-to-End",
+		Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+		description: (
+			<>
+				We provide everything you need to build, train, and deploy your AI
+				robot, from hardware to software and AI models.
+			</>
+		),
+	},
 ];
 
 function Feature({Svg, title, description}) {
