@@ -26,4 +26,4 @@ We have several projects under the OpenBot umbrella. Here are a few:
 
 Take your time exploring our documentation and see how each project works. We hope you enjoy learning and building with OpenBot.
 
-Stay cool and keep experimenting!
+Stay cool and keep building!
