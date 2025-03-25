@@ -4,7 +4,7 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
+You can override the default Infima variables here.
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -27,4 +27,41 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+:root {
+  /* Light mode (default) */
+  --ifm-color-primary: #869abf;             /* Primary color */
+  --ifm-color-primary-dark: #697ca8;          /* Slightly darker */
+  --ifm-color-primary-darker: #536a90;        /* Even darker */
+  --ifm-color-primary-darkest: #3e5578;       /* Darkest variant */
+  --ifm-color-primary-light: #a2b1d0;         /* Lighter variant */
+  --ifm-color-primary-lighter: #b0bddc;       /* Even lighter */
+  --ifm-color-primary-lightest: #c1c9e7;      /* Lightest variant */
+  
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(25, 26, 35, 0.1);
+  
+  /* Overall text and background for light mode */
+  --ifm-text-color: #000;
+  --ifm-background-color: #f1f1f1;
+}
+
+[data-theme="dark"] {
+  /* Dark mode: you can decide to keep the same primary or adjust for better contrast */
+  --ifm-color-primary: #869abf;              /* Same primary */
+  /* For dark mode, it can help to have primary variations that are a bit brighter to stand out on a dark background */
+  --ifm-color-primary-dark: #9faee2;          /* Lighter than light mode’s dark variant */
+  --ifm-color-primary-darker: #acbff0;
+  --ifm-color-primary-darkest: #b9d0ff;
+  --ifm-color-primary-light: #7685b0;
+  --ifm-color-primary-lighter: #6571a0;
+  --ifm-color-primary-lightest: #546090;
+  
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(241, 241, 241, 0.1);
+  
+  /* Overall text and background for dark mode */
+  --ifm-text-color: #f1f1f1;
+  --ifm-background-color: #191a23;
 }
