@@ -82,14 +82,14 @@ const config = {
 						sidebarId: "tutorialSidebar",
 						position: "left",
 						label: "Giraffe",
-						href: "/docs/Giraffe%20Kit/giraffe_intro",
+						href: "/docs/Giraffe/giraffe_intro",
 					},
 					{
 						type: "docSidebar",
 						sidebarId: "tutorialSidebar",
 						position: "left",
 						label: "Teleop Tongs",
-						href: "/docs/Teleop%20Tongs/teleop_tongs_intro",
+						href: "/docs/Teleop-Tongs/teleop_tongs_intro",
 					},
 					// { to: "/blog", label: "Blog", position: "left" },
 					{
@@ -116,11 +116,11 @@ const config = {
 							},
 							{
 								label: "Giraffe",
-								to: "/docs/Giraffe%20Kit/giraffe_intro",
+								to: "/docs/Giraffe/giraffe_intro",
 							},
 							{
 								label: "Teleop Tongs",
-								to: "/docs/Teleop%20Tongs/teleop_tongs_intro",
+								to: "/docs/Teleop-Tongs/teleop_tongs_intro",
 							},
 						],
 					},
