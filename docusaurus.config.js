@@ -114,6 +114,14 @@ const config = {
 								label: "Intro",
 								to: "/docs/intro",
 							},
+							{
+								label: "Giraffe",
+								to: "/docs/Giraffe%20Kit/giraffe_intro",
+							},
+							{
+								label: "Teleop Tongs",
+								to: "/docs/Teleop%20Tongs/teleop_tongs_intro",
+							},
 						],
 					},
 					{
@@ -128,6 +136,10 @@ const config = {
 					{
 						title: "More",
 						items: [
+							{
+								label: "OpenBot Landing Page",
+								href: "https://openbot.co.in",
+							},
 							{
 								label: "GitHub",
 								href: "https://github.com/openbot-co-in",
