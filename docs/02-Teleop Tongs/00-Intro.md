@@ -1,6 +1,26 @@
 ---
-id: welcome
-title: Welcome to OpenBot
+id: teleop_tongs_intro
+title: Teleop Tongs v0.9
+sidebar_label: Intro
+description: OpenBot Teleop Tongs v0.9 is an open-source, low-cost alternative to a Leader Arm for teleoperating robotic manipulators with any number of degrees of freedom.
+keywords:
+  - Giraffe
+  - Giraffe v1.1 Kit
+  - Teleop Tongs
+  - OpenBot
+  - OpenBot Giraffe
+  - OpenBot Giraffe v1.1 Kit
+  - Open Source
+  - Robotic Arm
+  - Leader-Follower
+  - LeRobot
+  - ROS2
+  - C++
+  - Python
+  - Robotics
+  - Open Source Hardware
+  - Open Source Software
+  - Open Source Robotics
 ---
 
 OpenBot is building community projects focused on making AI robotics easy and approachable. We work on different projects that help you learn, build, and experiment with robots without breaking the bank.

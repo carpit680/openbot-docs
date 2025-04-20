@@ -81,12 +81,25 @@ const config = {
 						type: "docSidebar",
 						sidebarId: "tutorialSidebar",
 						position: "left",
-						label: "Intro",
+						label: "Giraffe",
+						href: "/docs/Giraffe%20Kit/giraffe_intro",
+					},
+					{
+						type: "docSidebar",
+						sidebarId: "tutorialSidebar",
+						position: "left",
+						label: "Teleop Tongs",
+						href: "/docs/Teleop%20Tongs/teleop_tongs_intro",
 					},
 					// { to: "/blog", label: "Blog", position: "left" },
 					{
 						href: "https://github.com/openbot-co-in",
 						label: "GitHub",
+						position: "right",
+					},
+					{
+						href: "https://www.openbot.co.in/discord",
+						label: "Community",
 						position: "right",
 					},
 				],
@@ -108,7 +121,7 @@ const config = {
 						items: [
 							{
 								label: "Discord",
-								href: "https://discord.gg/SWASfmUV9b",
+								href: "https://www.openbot.co.in/discord",
 							},
 						],
 					},
