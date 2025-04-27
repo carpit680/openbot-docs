@@ -5,7 +5,7 @@ title: Welcome to OpenBot
 
 OpenBot is building community projects focused on making AI robotics easy and approachable. We work on different projects that help you learn, build, and experiment with robots without breaking the bank.
 
-Our goal is simple: to create open-source hardware and software that anyone can use. Whether you're just curious about robotics or already building your own projects, we’re here to help you get started in a relaxed and friendly way.
+Our goal is simple: to create open-source hardware and software that anyone can use. Whether you're just curious about robotics or already building your own projects, we’re here to help you get started.
 
 ## What We Do
 
