@@ -18,4 +18,3 @@ We’d love to hear from you! Whether you have questions, feedback, or want to c
 **Giraffe:** [openbot-co-in/giraffe/issues](https://github.com/openbot-co-in/giraffe/issues)
 
 **Teleop-Tongs:** [openbot-co-in/teleop_tongs/issues](https://github.com/openbot-co-in/teleop_tongs/issues)
-
