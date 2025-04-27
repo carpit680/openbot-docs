@@ -1,45 +1,60 @@
 ---
 id: ros2_intro
-title: ROS2 + MoveIt2
-sidebar_label: ROS2 + MoveIt2
-description: OpenBot Giraffe v1.1 Kit is an open-source leader-follower robotic arm that’s teachable via LeRobot and programmable with ROS 2, C++, or Python.
+title: Introduction to ROS2 + MoveIt2
+sidebar_label: Introduction
+description: Introduction to ROS2 and MoveIt2
 keywords:
-  - Giraffe
-  - Giraffe v1.1 Kit
+  - ROS2
+  - MoveIt2
   - OpenBot
   - OpenBot Giraffe
-  - OpenBot Giraffe v1.1 Kit
   - Open Source
-  - Robotic Arm
-  - Leader-Follower
-  - LeRobot
-  - ROS2
-  - C++
-  - Python
   - Robotics
   - Open Source Hardware
   - Open Source Software
   - Open Source Robotics
+  - C++
+  - Python
+  - Robotics
+  - Open Source Robotics
 ---
 
-OpenBot is building community projects focused on making AI robotics easy and approachable. We work on different projects that help you learn, build, and experiment with robots without breaking the bank.
 
-Our goal is simple: to create open-source hardware and software that anyone can use. Whether you're just curious about robotics or already building your own projects, we’re here to help you get started in a relaxed and friendly way.
+Robotics applications require a robust middleware for communication and a flexible planning framework for motion. This page introduces:
 
-## What We Do
+- **ROS 2**: The next-generation Robot Operating System, offering improved real-time support, security, and cross-platform compatibility.  
+- **MoveIt 2**: A powerful motion-planning framework built on ROS 2 that simplifies robot kinematics, collision checking, and trajectory execution.
 
-- **Low-Cost Solutions:** We design projects that are affordable while still delivering reliable performance.
-- **Open Source:** All our designs and code are available for you to explore, modify, and share.
-- **Learn by Doing:** Our documentation and guides are made to be clear and practical, so you can follow along and build your own projects.
-- **Community Focused:** OpenBot is built with input from a community that loves robotics, making sure our projects stay useful and accessible.
+## What Is ROS 2?
 
-## Our Projects
+ROS 2 provides:
+- **Decoupled Communication**: Pub/sub, services, and actions over DDS.  
+- **Real-Time Support**: Designed for deterministic execution with real-time operating systems.  
+- **Multi-Platform**: Runs on Linux, Windows, and macOS.  
+- **Security**: Built-in authentication, encryption, and access control.  
 
-We have several projects under the OpenBot umbrella. Here are a few:
+Learn more: [docs.ros.org](https://docs.ros.org/en/humble/index.html)
 
-- **OpenBot Giraffe v1.1 Kit:** An open‑source leader‑follower robotic arm that’s teachable via LeRobot and programmable with ROS 2, C++, or Python.
-- **Teleop Tongs v0.9:** An open-source, low-cost alternative to a Leader Arm for teleoperating robotic manipulators with any number of degrees of freedom.
+## What Is MoveIt 2?
 
-Take your time exploring our documentation and see how each project works. We hope you enjoy learning and building with OpenBot.
+MoveIt 2 extends ROS 2 to offer:
+- **Kinematics**: Forward and inverse solutions for serial manipulators.  
+- **Motion Planning**: Integrates OMPL for sampling-based planners.  
+- **Collision Checking**: Continuous and discrete checks using FCL.  
+- **Trajectories**: Smooth path interpolation and execution via ROS 2 control.  
 
-Stay cool and keep building!
+Learn more: [moveit.picknik.ai](https://moveit.picknik.ai/main/index.html)
+
+## Why Combine ROS 2 & MoveIt 2?
+
+By pairing ROS 2 with MoveIt 2, you gain:
+- **Seamless Integration**: Use ROS 2’s node graph to coordinate perception, planning, and control.  
+- **Scalability**: Deploy on single boards (e.g., Jetson) or distributed systems.  
+- **Community & Support**: Leverage extensive tutorials, packages, and forums.
+
+## Prerequisites
+
+- A system running **Ubuntu 22.04 LTS** (or other supported ROS 2 platform)  
+- **ROS 2 Humble Hawksbill**: follow the installation guide at [Installation on Ubuntu (Debians)](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)  
+- **MoveIt 2**: install via the Humble binary packages following [MoveIt 2 Binary Install (Humble)](https://moveit.ai/install-moveit2/binary/)  
+- Familiarity with basic Python/C++ and terminal usage
