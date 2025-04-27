@@ -4,7 +4,7 @@ title: Citations
 sidebar_label: Citations
 description: Citations and references to all the open source projects and resources used in our projects.
 keywords:
-` - Citations
+  - Citations
   - References
   - OpenBot
   - OpenBot Giraffe
@@ -22,4 +22,4 @@ keywords:
   - Open Source Robotics
 ---
 
-This documentation page is under construction. Please check back soon for updates!
+🚧 This documentation page is under construction. Please check back soon for updates! 🚧
