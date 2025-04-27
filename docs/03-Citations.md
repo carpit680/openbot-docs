@@ -21,6 +21,5 @@ keywords:
   - Open Source Software
   - Open Source Robotics
 ---
-# Coming Soon
 
 🚧 This documentation page is under construction. Please check back soon for updates! 🚧
