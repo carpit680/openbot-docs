@@ -66,7 +66,7 @@ sudo chmod 666 /dev/ttyACM1
 
 #### d. Update config file
 
-IMPORTANTLY: Now that you have your ports, update the **port** default values of [`SO100RobotConfig`](../lerobot/common/robot_devices/robots/configs.py). You will find something like:
+IMPORTANTLY: Now that you have your ports, update the **port** default values of [`SO100RobotConfig`]. You will find something like:
 
 ```python
 @RobotConfig.register_subclass("so100")

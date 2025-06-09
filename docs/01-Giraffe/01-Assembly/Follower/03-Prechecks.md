@@ -49,13 +49,13 @@ The STL files provided are ready to print on many FDM printers. Below are the te
 
 ### Step 3: Check Printer Accuracy
 
-1.  In the [Gauges](STL/Gauges) folder, there are two types of gauges, one to check the size of print against a standard 4x2 lego block and one against a STS3215 servo.
+1.  In the Gauges folder, there are two types of gauges, one to check the size of print against a standard 4x2 lego block and one against a STS3215 servo.
     1. If you have a STS3215 servo, print:
-       1. [Gauge Zero](STL/Gauges/Gauge_0.STL)
-       2. [Gauge Tight](STL/Gauges/Gauge_tight_1.STL)
+       1. [Gauge Zero]
+       2. [Gauge Tight]
     2. If you have a standard lego block, print:
-       1. [Gauge Zero](STL/Gauges/Lego_Size_Test_02_zero.STL)
-       2. [Gauge -0.1](STL/Gauges/Lego_Size_Test_02_minuspoint1.STL)
+       1. [Gauge Zero]
+       2. [Gauge -0.1]
 2.  Test the gauge 0 against your given object (Lego or Servo). The fit should be similar to this [tutorial](https://youtu.be/dss8E3DG2rA).
 3.  If the fit is appropriate, go onto Step 4, otherwise, change your printer settings and try again or create an issue.
 
