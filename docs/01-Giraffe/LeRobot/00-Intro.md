@@ -37,6 +37,6 @@ The **OpenBot Giraffe** kit enables precise motion control, task learning, and h
 - Visualization, replay, and evaluation utilities
 - Training pipelines using ACT or similar policies
 
-> If you're looking to use a Servo-less Leader Arm with magnetic encoders, refer to the [Servo-Less Leader Arm](./Servo-Less-Leader) page.
+> If you're looking to use a Servo-less Leader Arm with magnetic encoders, refer to the [Servo-Less Leader Arm] page.
 
 Let’s get started!
