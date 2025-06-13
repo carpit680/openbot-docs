@@ -1,7 +1,7 @@
 ---
 id: follower-motor-configure
-title: Motor Configuration
-sidebar_label: Configuration
+title: Motor Config
+sidebar_label: Motor Config
 description: Motor Configuration required before Assembly for Follower arm.
 keywords:
   - Configuration
@@ -15,9 +15,11 @@ keywords:
   - Robotics
 ---
 
-<!-- @format -->
+> <span style={{ color: "red", fontWeight: "bold"}}>Important</span>:- **Make sure to install servo Horns in correct orientations only after motor config** (This is to make sure the actual zero point of the servo encoder is in the middle so that we can rotate about 180 degrees in either direction.)
 
-### 1. Find the USB ports associated to each arm
+> NOTE: _Lerobot installation required. For instructions, refer to [Lerobot Setup](/docs/Giraffe/LeRobot/lerobot_setup)._
+
+### 1. Find the USB ports associated to Follower arm
 
 #### a. Run the script to find port
 
@@ -64,62 +66,11 @@ sudo chmod 666 /dev/ttyACM0
 sudo chmod 666 /dev/ttyACM1
 ```
 
-#### d. Update config file
+### 2. Motor Config
 
-IMPORTANTLY: Now that you have your ports, update the **port** default values of [`SO100RobotConfig`]. You will find something like:
+#### a. Set IDs for all 6 motors
 
-```python
-@RobotConfig.register_subclass("so100")
-@dataclass
-class So100RobotConfig(ManipulatorRobotConfig):
-    calibration_dir: str = ".cache/calibration/so100"
-    # `max_relative_target` limits the magnitude of the relative positional target vector for safety purposes.
-    # Set this to a positive scalar to have the same value for all motors, or a list that is the same length as
-    # the number of motors in your follower arms.
-    max_relative_target: int | None = None
-
-    leader_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": FeetechMotorsBusConfig(
-                port="/dev/tty.usbmodem58760431091",  <-- UPDATE HERE
-                motors={
-                    # name: (index, model)
-                    "shoulder_pan": [1, "sts3215"],
-                    "shoulder_lift": [2, "sts3215"],
-                    "elbow_flex": [3, "sts3215"],
-                    "wrist_flex": [4, "sts3215"],
-                    "wrist_roll": [5, "sts3215"],
-                    "gripper": [6, "sts3215"],
-                },
-            ),
-        }
-    )
-
-    follower_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": FeetechMotorsBusConfig(
-                port="/dev/tty.usbmodem585A0076891",  <-- UPDATE HERE
-                motors={
-                    # name: (index, model)
-                    "shoulder_pan": [1, "sts3215"],
-                    "shoulder_lift": [2, "sts3215"],
-                    "elbow_flex": [3, "sts3215"],
-                    "wrist_flex": [4, "sts3215"],
-                    "wrist_roll": [5, "sts3215"],
-                    "gripper": [6, "sts3215"],
-                },
-            ),
-        }
-    )
-```
-
-### 2. Assembling the Base
-
-Let's begin with assembling the follower arm base
-
-#### a. Set IDs for all 12 motors
-
-Plug your first motor F1 and run this script to set its ID to 1. It will also set its present position to 2048, so expect your motor to rotate. Replace the text after --port to the corresponding follower control board port and run this command in cmd:
+Plug your first motor and run this script to set its ID to 1. It will also set its present position to 2048, so expect your motor to rotate. Replace the text after --port to the corresponding follower control board port and run this command in cmd:
 
 ```bash
 python lerobot/scripts/configure_motor.py \

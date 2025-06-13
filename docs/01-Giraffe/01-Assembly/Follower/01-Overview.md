@@ -23,6 +23,19 @@ keywords:
 
 This document provides complete instructions for using OpenBot Giraffe Follower Arm. It includes detailed assembly instructions for the Configuring the Servos, wiring to the servo Bus, calibration procedures, and steps to verify functionality.
 
+<div style={{ display: "flex", gap: "16px" }}>
+  <img
+    src="/img/follower_render.jpeg"
+    alt="Follower Render"
+    style={{ width: "500px" }}
+  />
+  <img
+    src="/img/follower_real.jpeg"
+    alt="Follower Real"
+    style={{ width: "500px" }}
+  />
+</div>
+
 ---
 
 ### A. Introduction

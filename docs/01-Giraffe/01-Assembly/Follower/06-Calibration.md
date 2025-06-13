@@ -18,17 +18,10 @@ keywords:
 
 <!-- @format -->
 
-## Calibrate
-
 You'll need to calibrate your robot to ensure that the leader and follower arms have the same position values when they are in the same physical position.
 The calibration process is very important because it allows a neural network trained on one robot to work on another.
 
 ### Manual calibration of follower arm
-
-You will need to move the follower arm to these positions sequentially:
-
-| 1. Zero position | 2. Rotated position | 3. Rest position |
-_[Insert image of all three positions]_
 
 Make sure both arms are connected and run this script to launch manual calibration:
 
@@ -40,4 +33,25 @@ python lerobot/scripts/control_robot.py \
   --control.arms='["main_follower"]'
 ```
 
-the script will promt you to move the arm to the required position then press enter, do as instructued for the three position and follower calibration will be done.
+the script will promt you to move the arm to three required position then press enter:
+
+<div style={{ display: "flex", justifyContent: "space-between", gap: "10px" }}>
+
+  <div style={{ textAlign: "center" }}>
+    <img src="/img/follower_zero.jpeg" alt="Zero Position" style={{ width: "100%", maxWidth: "350px" }} />
+    <p>*Zero position*</p>
+  </div>
+
+  <div style={{ textAlign: "center" }}>
+    <img src="/img/follower_rotated.jpeg" alt="Rotated Position" style={{ width: "100%", maxWidth: "350px" }} />
+    <p>*Rotated position*</p>
+  </div>
+
+  <div style={{ textAlign: "center" }}>
+    <img src="/img/follower_rest.jpeg" alt="Rest Position" style={{ width: "100%", maxWidth: "350px" }} />
+    <p>*Rest position*</p>
+  </div>
+
+</div>
+
+Do as instructued for the three position and follower calibration will be done.

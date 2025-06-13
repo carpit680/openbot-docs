@@ -25,41 +25,75 @@ keywords:
 - Soldering Iron and Wire
 - Flush Cutter
 
-## Printing the Parts
+### Printing The Parts
 
-A variety of 3D printers are acceptable to print the parts necessary of the follower and leader arm. Follow the steps below to ensure a good print.
+A variety of 3D printers can be used to print the necessary parts for the arm. Follow these steps for optimal printing results.
 
-### Step 1: Choose a Printer
+#### 1. Select A Printer
 
-The STL files provided are ready to print on many FDM printers. Below are the tested and suggested settings though others may work.
+When choosing a printer, keep the following recommended specifications in mind. While other printers may work, these spececifications are a good starting point:
 
-1.  Material: PLA+
-2.  Nozzle Diameter and Precision: 0.4mm nozzle diameter at 0.2mm layer height or 0.6mm nozzle at 0.4mm layer height.
-3.  Infill Density: 15%
-4.  Sample Printers: [Prusa MINI+](https://www.prusa3d.com/product/original-prusa-mini-semi-assembled-3d-printer-4/), [UP Plus 2](https://shop.tiertime.com/product/tiertime-up-plus-2-3d-printer/), [Creality Ender 3](https://www.amazon.com/Comgrow-Creality-Ender-Aluminum-220x220x250mm/dp/B07BR3F9N6/), [Bambu Lab A/P/X-series](https://bambulab.com)
+- **Layer Height:** Minimum 0.2mm
+- **Material:** PLA+, ABS, PETG, or other durable plastics
+- **Nozzle Diameter:** Maximum 0.4mm
+- **Infill Density:** Approximately 30%
+- **Suggested Printers:** Prusa Mini+, Bambu P1, Ender3, and similar models
 
-### Step 2: Set up the Printer
+#### 2. Prepare The Printer
 
-1.  Ensure that the printer is calibrated and the bed level is correctly set using the printer specific instructions.
-2.  Clean the print bed, making sure it is free from dust, or grease. If cleaning the bed using water, or other liquid, dry the bed.
-3.  If your printer recommends it, use a standard glue stick and apply a thin, even layer of glue across the print area of the bed. Avoid clumping or uneven application.
-4.  Load the printer filament using printer specific instructions.
-5.  Ensure the printer settings match the ones suggested above (most printers have multiple settings so choose the ones that most closely match).
-6.  Set for supports everywhere but ignore slopes greater than 45 degrees to the horizontal.
-7.  There should be no supports in the screw holes with horizontal axes.
+- **Materials Needed:**
 
-### Step 3: Check Printer Accuracy
+  - Standard Glue Stick
+  - Putty Knife
 
-1.  In the Gauges folder, there are two types of gauges, one to check the size of print against a standard 4x2 lego block and one against a STS3215 servo.
-    1. If you have a STS3215 servo, print:
-       1. [Gauge Zero]
-       2. [Gauge Tight]
-    2. If you have a standard lego block, print:
-       1. [Gauge Zero]
-       2. [Gauge -0.1]
-2.  Test the gauge 0 against your given object (Lego or Servo). The fit should be similar to this [tutorial](https://youtu.be/dss8E3DG2rA).
-3.  If the fit is appropriate, go onto Step 4, otherwise, change your printer settings and try again or create an issue.
+- **Setup and Printing Process:**
+  1. Calibrate the printer and level the print bed following your printer’s specific instructions.
+  2. Clean the print bed, removing any dust or grease. If you use water or other cleaning agents, ensure the bed is fully dry.
+  3. Apply a thin, even layer of glue to the print area. Avoid uneven application or clumps.
+  4. Load the printer filament according to the printer's guidelines.
+  5. Adjust the printer settings to match the recommended specifications listed above.
+  6. Verify the file format, select files from the hardware folder, and begin printing.
 
-### Step 4: Print the Parts
+#### 3. Print The Parts
 
-All the parts for the leader are for easy 3D printing already contained in a **single file**(LINK), correctly orientated for z upwards to minimize supports.
+Print one of each part found in `/CAD/STL/common/` and `/CAD/STL/leader/`. The files are organized as follows:
+
+### Leader Parts
+
+- base
+- servo_driver_mount
+- shoulder_pan
+- soulder_pan_retainer
+- shoulder_pan_pin
+- shoulder_lift
+- elbow
+- wrist_1
+- as5600_servo_1
+- as5600_servo_2
+- leader_clamp_base
+- leader_wrist_2
+- leader_handle
+- leader_gripper_finger
+
+> **Note on Joint 5 & 6:**  
+> Joints 5 and 6 use the “AS5600_Servo_2” variant. This variant has a different design and no idle shaft.
+
+<div style={{ display: "flex", gap: "10px" }}>
+  <div style={{ textAlign: "center" }}>
+    <img
+      src="/img/servo_1_render.jpeg"
+      alt="Servo 1 Render"
+      style={{ width: "300px" }}
+    />
+    <p>Servo 1</p>
+  </div>
+  <div style={{ textAlign: "center" }}>
+    <img
+      src="/img/servo_2_render.jpeg"
+      alt="Servo 2 Render"
+      style={{ width: "300px" }}
+    />
+    <p>Servo 2</p>
+  </div>
+</div>
+
