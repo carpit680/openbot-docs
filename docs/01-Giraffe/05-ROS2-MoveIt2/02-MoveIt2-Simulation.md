@@ -14,47 +14,19 @@ keywords:
 
 <!-- @format -->
 
-# MoveIt 2 Setup
-
-### Install ROS 2 Humble
-
-Follow the [official instructions](https://docs.ros.org/en/humble/Installation.html).
-
-### Install Gazebo Fortress
-
-Follow the [Gazebo Fortress installation guide](https://gazebosim.org/docs/fortress/install_ubuntu/).
-
-### Install MoveIt 2
-
-```bash
-sudo apt update
-sudo apt install -y ros-humble-moveit
-```
-
-### Install Additional Dependencies
-
-```bash
-sudo apt install -y ros-humble-ros2-control ros-humble-ros2-controllers
-sudo apt install -y python3-colcon-common-extensions python3-rosdep
-```
-
-### Set Up the Workspace
-
-```bash
-cd giraffe_ws
-sudo rosdep init   # Only if not already done
-rosdep update
-rosdep install --from-paths src --ignore-src -r -y
-colcon build --symlink-install
-source install/local_setup.bash  # or local_setup.zsh
-```
 
 # Simulation with MoveIt and Gazebo
+
+<video controls style={{ width: "100%", maxWidth: "800px" }}>
+
+  <source src="/img/moveit_sim.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
 
 ### Launch RViz with the robot model
 
 ```bash
-ros2 launch giraffe_bringup display.launch.py
+ros2 launch giraffe_description display.launch.py
 ```
 
 This command starts the robot state in RViz using `joint_state_publisher` and `robot_state_publisher`.
@@ -62,7 +34,7 @@ This command starts the robot state in RViz using `joint_state_publisher` and `r
 ### Run the physics-based simulation
 
 ```bash
-ros2 launch giraffe_bringup simulation.launch.py
+ros2 launch giraffe_description simulation.launch.py
 ```
 
 This launches Gazebo Fortress and spawns the robot into the simulated world using ROS 2 control interfaces.
@@ -70,7 +42,7 @@ This launches Gazebo Fortress and spawns the robot into the simulated world usin
 ### Start MoveIt for interactive planning
 
 ```bash
-ros2 launch giraffe_moveit_config moveit.launch.py
+ros2 launch giraffe_description moveit_sim.launch.py
 ```
 
 This launches RViz with MoveIt integration to allow for:

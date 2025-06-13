@@ -23,6 +23,19 @@ keywords:
 
 This document provides complete instructions for using AS5600 magnetic encoders in the Leader Arm of OpenBot Giraffe. It includes detailed assembly instructions for the 3D-printed encoder casings, wiring to the custom PCB with ESP8266 based wemos D1 mini and TCA9548A I²C multiplexer, calibration procedures, and steps to verify functionality. It also includes the teleoperation process to control the follower arm using the leader's live angle data.
 
+<div style={{ display: "flex", gap: "16px" }}>
+  <img
+    src="/img/leader_render.jpeg"
+    alt="Follower Render"
+    style={{ width: "500px" }}
+  />
+  <img
+    src="/img/follower_real.jpeg"
+    alt="Follower Real"
+    style={{ width: "500px" }}
+  />
+</div>
+
 ---
 
 ### A. Introduction

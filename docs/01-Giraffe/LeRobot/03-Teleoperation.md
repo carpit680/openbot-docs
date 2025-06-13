@@ -35,4 +35,4 @@ python lerobot/scripts/control_robot.py \
   --control.type=teleoperate
 ```
 
-> Refer to Eye in Hands to setup the Camera.
+> Refer to [Eye in Hands](/docs/Giraffe/LeRobot/lerobot_grippercam) to setup the Camera.
