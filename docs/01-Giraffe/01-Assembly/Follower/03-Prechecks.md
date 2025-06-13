@@ -17,11 +17,10 @@ keywords:
 
 <!-- @format -->
 
-### Pre‐Assembly Checks
 
 ### Tools Required
 
-- Screwdriver ()
+- Screwdriver *(PH1 and PH2 Bits needed)*
 
 ### Printing The Parts
 
