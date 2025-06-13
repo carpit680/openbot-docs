@@ -17,11 +17,10 @@ keywords:
 
 <!-- @format -->
 
-### Pre‐Assembly Checks
 
 ## Tools Required
 
-- Screwdriver (Specify Bits)
+- Screwdriver *(PH1 and PH2 Bits needed)*
 - Soldering Iron and Wire
 - Flush Cutter
 
