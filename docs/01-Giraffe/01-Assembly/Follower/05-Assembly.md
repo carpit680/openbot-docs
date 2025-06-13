@@ -12,8 +12,10 @@ keywords:
   - Open Source Robotics
 ---
 
-<span style={{ color: "red", fontWeight: "bold" }}>Important:</span> Servo horns must be mounted in a “+” orientation on every joint except Joint 4, which requires an “X” orientation.
+<!-- @format -->
 
+<span style={{ color: "red", fontWeight: "bold" }}>Important:</span> Servo horns must be mounted in a “+” orientation on every joint except Joint 4, which requires an “X” orientation.
+> **Assembly video coming soon**
 
 ### Base and First Motor
 
@@ -24,7 +26,7 @@ keywords:
    - Place the servo horn in **+** Position and screw the Shoulder Pan link in zero position and driving horn to the motor with M3 bolts.
    - Insert the shoulder pan pin under the shoulder pan link.
    - Place the motor inside the base and secure it using four M2.5 screws (two from the top and two from the bottom).
-   - Insert the sholder pan retainer and fasten it with one M2.5 screw on each side.
+   - Insert the shoulder pan retainer and fasten it with one M2.5 screw on each side.
    - Route the wire to robot's back where servo bus is mounted and insert the wire into the bus.
 
 ### Second Motor and Upper Arm

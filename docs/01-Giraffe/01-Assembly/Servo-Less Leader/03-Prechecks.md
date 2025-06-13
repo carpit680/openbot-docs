@@ -30,7 +30,7 @@ A variety of 3D printers can be used to print the necessary parts for the arm. F
 
 #### 1. Select A Printer
 
-When choosing a printer, keep the following recommended specifications in mind. While other printers may work, these spececifications are a good starting point:
+When choosing a printer, keep the following recommended specifications in mind. While other printers may work, these specifications are a good starting point:
 
 - **Layer Height:** Minimum 0.2mm
 - **Material:** PLA+, ABS, PETG, or other durable plastics
@@ -62,7 +62,7 @@ Print one of each part found in `/CAD/STL/common/` and `/CAD/STL/leader/`. The f
 - base
 - servo_driver_mount
 - shoulder_pan
-- soulder_pan_retainer
+- shoulder_pan_retainer
 - shoulder_pan_pin
 - shoulder_lift
 - elbow
@@ -96,3 +96,4 @@ Print one of each part found in `/CAD/STL/common/` and `/CAD/STL/leader/`. The f
   </div>
 </div>
 
+<img src="/img/leader_3d_parts.jpeg" alt="Leader 3D Printed Parts" style={{ width: "750px" }} />
