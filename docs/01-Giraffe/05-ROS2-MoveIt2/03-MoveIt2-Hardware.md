@@ -34,7 +34,7 @@ This launch file configures and launches the giraffe robot hardware, MoveIt! 2, 
       - Loads MoveIt! 2 configurations (SRDF, kinematics, and OMPL planning).
       - Starts the move_group node for motion planning and trajectory execution.
   2. RViz Visualization:
-      - Displays the robot's state and motion planning visualization using a preconfigured RViz setup.
+      - Displays the robot's state and motion planning visualization using a pre-configured RViz setup.
   3. Hardware Interface:
       - Includes a node for the giraffe robot's hardware interface for integration with controllers.
 

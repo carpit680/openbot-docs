@@ -44,5 +44,5 @@ The Giraffe Follower Arm is an affordable, open-source 5-DOF robotic manipulator
 
 - **Easy Assembly:** A comprehensive yet small Bill of Materials (BOM) with a detailed assembly guide.
 - **LeRobot Integration:** Allows you to teleoperate and teach Giraffe with our servo-less Leader Arm.
-- **ROS2-Native Control:** Preconfigured packages for simulation, visualization, trajectory planning, and hardware bring-up.
+- **ROS2-Native Control:** Pre-configured packages for simulation, visualization, trajectory planning, and hardware bring-up.
 - **Sensory Extensibility:** Optional integration with Intel RealSense off-the-shelf webcams for eye-in-hand or eye-to-hand setup configurations.

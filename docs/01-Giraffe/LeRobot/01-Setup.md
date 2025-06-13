@@ -21,7 +21,7 @@ keywords:
 
 <!-- @format -->
 
-> <span style={{ color: "red", fontWeight: "bold" }}>Important</span>:- The instructions and setup provided in this documentation are specific to our customized branch of the LeRobot repository, which can be found (Give Link).
+> <span style={{ color: "red", fontWeight: "bold" }}>Important</span>:- The instructions and setup provided in this documentation are specific to our customized branch of the [LeRobot repository](https://github.com/carpit680/lerobot/tree/execute).
 
 ### 1. **Install Miniconda**
 
@@ -85,11 +85,11 @@ python lerobot/scripts/configure_motor.py \
 
 ### 9. **Add motor horns**
 
-Align holes to spline angles (AS instructed in [Follower Assembly](/docs/Giraffe/Assembly/Follower/follower-assembly)). Avoid rotating motors during mounting.
+Align holes to spline angles (As instructed in [Follower Assembly](/docs/Giraffe/Assembly/Follower/follower-assembly)). Avoid rotating motors during mounting.
 
 ### 10. **Assemble the arm**
 
-    Follow the provided videos or documentation for physical assembly.
+    Follow the provided documentation for physical assembly.
     _Note: Insert cables before mounting motors for easier handling._
 
 > *For setting up the Leader Arm using magnetic encoders, refer to the [Servo-Less Leader Arm](/docs/Giraffe/Assembly/Servo-Less%20Leader/leader_overview) page.*

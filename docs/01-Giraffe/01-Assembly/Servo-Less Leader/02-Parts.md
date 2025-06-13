@@ -30,3 +30,4 @@ keywords:
 | Perf Board | 1 | ₹142.00 | [Robu.in](https://robu.in/product/12-x-18-cm-universal-pcb-prototype-board-single-sided-2-54mm-hole-pitch/) |
 | Total | --- | ₹1,651 | --- |
 
+<img src="/img/leader_all_parts.jpeg" alt="Leader All Parts" style={{ width: "850px" }} />

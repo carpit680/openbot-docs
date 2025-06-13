@@ -29,11 +29,6 @@ This document provides complete instructions for using AS5600 magnetic encoders 
     alt="Follower Render"
     style={{ width: "500px" }}
   />
-  <img
-    src="/img/follower_real.jpeg"
-    alt="Follower Real"
-    style={{ width: "500px" }}
-  />
 </div>
 
 ---
@@ -47,4 +42,4 @@ Instead of using Feetech servo motors on the Leader Arm, we’ve designed a 3D�
 - **Precision** Each joint has a 12 bit resolution, thus giving same amount of precision as a feetch servo.
 - **Back‐drivability:** Since there is no gearbox, the joint is freely back‐drivable if pushed by an external force.
 
-Each Leader Arm joint (6 total joints) will get its own AS5600 “servo casing,” wired back to a central I²C multiplexer + microcontroller.
+Each Leader Arm joint (6 total joints) will get its own AS5600 “servo casing,” wired back to a central I²C multiplexer + micro-controller.
