@@ -18,64 +18,34 @@ keywords:
 
 <!-- @format -->
 
-> **Important:** This is a custom sensor‐only calibration that follows the same “zero → 90°” procedure as the original LeRobot SO-100. There is no “rest” position calibration needed.
+> NOTE: _Lerobot installation required. For instructions, refer to [Lerobot Setup](/docs/Giraffe/LeRobot/lerobot_setup)._
 
-1. **Run Calibration Script**  
-   Run the calibration script from the OpenBot-modified LeRobot repository to begin the process:
+### Initialize Leader Port and Run AS5600 Reader
 
-   ```bash
-   cd ~/lerobot-openbot                  # “openbot” branch of LeRobot that supports AS5600
-   python lerobot/scripts/control_robot.py \
-     --robot.type=so100 \
-     --robot.cameras='{}' \
-     --control.type=calibrate \
-     --control.arms='["main_leader"]'
-   ```
+To set up and read sensor values from the Leader arm, follow these steps:
 
-   The script will detect the serial port for the ESP8266 automatically  
-   (if you have unplugged and re-plugged it once so it appears as `/dev/ttyUSBx` or similar).  
-   If auto-detection fails, you can specify it manually using the `--control.serial_port` argument, like:  
-   `--control.serial_port="/dev/ttyUSB0"`
-
-   Once the prompt says:
-
-   ```
-   Move arm to ZERO position and press ENTER
-   ```
-   >Image of Zero Position
-
-   — place the Leader Arm manually into its zero position (typically all joints aligned straight) and press **Enter**.
-
-2. **Move to 90° Position**  
-   The script will now prompt:
-
-   ```
-   Move arm to 90° position and press ENTER
-   ```
-
-   >Image of 90 degree Position
-
-   Manually rotate each joint to the +90° position relative to the previously set zero position.  
-   Use markings, reference geometry, or a digital angle gauge to be precise.  
-   Press **Enter** again when ready.
-
-3. **Complete Calibration**  
-   The script will calculate a linear mapping from raw AS5600 values to joint angles based on the two positions.  
-   This data is saved in `~/.le_robot/calibration/leader_calib.txt`.  
-   No additional steps are required; calibration is now complete.
-
-4. **Verify Calibration**  
-   To confirm everything is working, run:
+1. **Navigate to the LeRobot directory**:
 
    ```bash
-   python lerobot/scripts/control_robot.py \
-     --robot.type=so100 \
-     --robot.cameras='{}' \
-     --control.type=stream_angles \
-     --control.arms='["main_leader"]'
+   cd ~/lerobot
    ```
 
-   Rotate each joint shaft by hand and observe the printed angle output.  
-   Confirm that the reported degrees correspond to actual joint rotation.
+2. **Run the leader port detection script**:
 
----
+   ```bash
+   python3 find_leader_port.py
+   ```
+
+   This script will guide you to disconnect the USB for the Leader’s sensor board and automatically detect the correct serial port. It will then save the result to a file named `leader_port.txt`.
+
+3. **Run the AS5600 sensor reader**:
+
+   ```bash
+   python3 AS5600_reader.py
+   ```
+
+   On the first run, this script will detect that calibration data is missing and initiate a calibration process,simply follow the on-screen prompts to complete the calibration of your Leader arm.
+
+> This is a custom sensor‐only calibration that follows the same “zero → 90°” procedure as the [Follower](/docs/01-Giraffe/01-Assembly/Follower/06-Calibration.md).  
+> There is no “rest” position calibration needed.
+
