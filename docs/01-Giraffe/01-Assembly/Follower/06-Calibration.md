@@ -33,7 +33,7 @@ python lerobot/scripts/control_robot.py \
   --control.arms='["main_follower"]'
 ```
 
-the script will promt you to move the arm to three required position then press enter:
+the script will prompt you to move the arm to three required position then press enter:
 
 <div style={{ display: "flex", justifyContent: "space-between", gap: "10px" }}>
 
@@ -54,4 +54,4 @@ the script will promt you to move the arm to three required position then press 
 
 </div>
 
-Do as instructued for the three position and follower calibration will be done.
+Do as instructed for the three position and follower calibration will be done.

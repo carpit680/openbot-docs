@@ -28,7 +28,7 @@ Robotics applications require a robust middleware for communication and a flexib
 ## What Is ROS 2?
 
 ROS 2 provides:
-- **Decoupled Communication**: Pub/sub, services, and actions over DDS.  
+- **Decoupled Communication**: Pub/sub, services, and actions over DDS.
 - **Real-Time Support**: Designed for deterministic execution with real-time operating systems.  
 - **Multi-Platform**: Runs on Linux, Windows, and macOS.  
 - **Security**: Built-in authentication, encryption, and access control.  
