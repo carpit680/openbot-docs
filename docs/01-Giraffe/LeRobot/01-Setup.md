@@ -21,7 +21,7 @@ keywords:
 
 <!-- @format -->
 
-> <span style={{ color: "red", fontWeight: "bold" }}>Important</span>:- The instructions and setup provided in this documentation are specific to our customized branch of the [LeRobot repository](https://github.com/carpit680/lerobot/tree/execute).
+> <span style={{ color: "red", fontWeight: "bold" }}>Important</span>:- The instructions and setup provided in this documentation are specific to our customized branch of the [LeRobot repository](https://github.com/openbot-co-in/lerobot-openbot/tree/user/carpit680/2025_06_18_add_giraffe_robot).
 
 ### 1. **Install Miniconda**
 
@@ -47,9 +47,9 @@ conda activate lerobot
 ### 4. **Clone LeRobot**
 
 ```bash
-git clone https://github.com/huggingface/lerobot.git ~/lerobot
+git clone git clone --branch user/carpit680/2025_06_18_add_giraffe_robot https://github.com/huggingface/lerobot.git
 cd ~/lerobot
-pip install -e ".[feetech]"
+pip install -e .
 ```
 
 ### 5. **Linux-only: Extra dependencies for dataset recording**
@@ -62,30 +62,7 @@ conda install -y -c conda-forge "opencv>=4.10.0"
 
 ### 6. **Find USB ports for your arm**
 
-```bash
-python lerobot/scripts/find_motors_bus_port.py
-```
-
-### 7. **Update the follower port**
-
-Update the `follower_arms` section in `So100RobotConfig` in `configs.py`.
-
-### 8. **Configure each motor (follower arm)**
-
-Set each motor’s ID from 1 to 6:
-
-```bash
-python lerobot/scripts/configure_motor.py \
-  --port /dev/ttyUSB0 \
-  --brand feetech \
-  --model sts3215 \
-  --baudrate 1000000 \
-  --ID <ID>
-```
-
-### 9. **Add motor horns**
-
-Align holes to spline angles (As instructed in [Follower Assembly](/docs/Giraffe/Assembly/Follower/follower-assembly)). Avoid rotating motors during mounting.
+Refer to [motor configure](/docs/01-Giraffe/01-Assembly/Follower/04-Configuring_Motors.md) for setting up the motors.
 
 ### 10. **Assemble the arm**
 

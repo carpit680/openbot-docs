@@ -23,35 +23,36 @@ The calibration process is very important because it allows a neural network tra
 
 ### Manual calibration of follower arm
 
-Make sure both arms are connected and run this script to launch manual calibration:
+Run the following command or API example to calibrate the follower arm:
+
+<hfoptions id="calibrate_follower">
+<hfoption id="Command">
 
 ```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=so100 \
-  --robot.cameras='{}' \
-  --control.type=calibrate \
-  --control.arms='["main_follower"]'
+python -m lerobot.calibrate \
+    --robot.type=giraffe_follower \
+    --robot.port=/dev/tty.usbmodem58760431551 \ # <- The port of your robot
+    --robot.id=my_follower_arm # <- Give the robot a unique name
 ```
 
-the script will prompt you to move the arm to three required position then press enter:
+</hfoption>
+<hfoption id="API example">
 
-<div style={{ display: "flex", justifyContent: "space-between", gap: "10px" }}>
+```python
+from lerobot.common.robots.giraffe_follower import GiraffeFollowerConfig, GiraffeFollower
 
-  <div style={{ textAlign: "center" }}>
-    <img src="/img/follower_zero.jpeg" alt="Zero Position" style={{ width: "100%", maxWidth: "350px" }} />
-    <p>*Zero position*</p>
-  </div>
+config = GiraffeFollowerConfig(
+    port="/dev/tty.usbmodem585A0076891",
+    id="my_follower_arm",
+)
 
-  <div style={{ textAlign: "center" }}>
-    <img src="/img/follower_rotated.jpeg" alt="Rotated Position" style={{ width: "100%", maxWidth: "350px" }} />
-    <p>*Rotated position*</p>
-  </div>
+follower = GiraffeFollower(config)
+follower.connect(calibrate=False)
+follower.calibrate()
+follower.disconnect()
+```
 
-  <div style={{ textAlign: "center" }}>
-    <img src="/img/follower_rest.jpeg" alt="Rest Position" style={{ width: "100%", maxWidth: "350px" }} />
-    <p>*Rest position*</p>
-  </div>
+</hfoption>
+</hfoptions>
 
-</div>
-
-Do as instructed for the three position and follower calibration will be done.
+First, we have to move the robot to the position where each joint is in the middle of its range, then we press `Enter`. Secondly, we move all joints through their full range of motion. A video of this same process for the SO101 as reference can be found [here](https://huggingface.co/docs/lerobot/en/so101#calibration-video)
