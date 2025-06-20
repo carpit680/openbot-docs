@@ -17,12 +17,12 @@ keywords:
 
 Replay a specific episode:
 ```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=so100 \
-  --control.type=replay \
-  --control.fps=30 \
-  --control.repo_id=${HF_USER}/so100_test \
-  --control.episode=0
+python -m lerobot.replay \
+    --robot.type=giraffe_follower \
+    --robot.port=/dev/tty.usbmodem58760431541 \
+    --robot.id=my_follower_arm \
+    --dataset.repo_id=${HF_USER}/record-test \
+    --dataset.episode=0 # choose the episode you want to replay
 ```
 
-Add `--control.local_files_only=true` if not using Hugging Face Hub.
+Your robot should replicate movements similar to those you recorded.

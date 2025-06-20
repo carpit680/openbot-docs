@@ -17,18 +17,11 @@ keywords:
 
 ### Visualise a Dataset
 
-**If pushed to Hugging Face:**
+**Once pushed to Hugging Face:**
 Go to: [Online Dataset Visualizer](https://huggingface.co/spaces/lerobot/visualize_dataset)  
 Enter:
 
 ```bash
-echo ${HF_USER}/so100_test
+echo ${HF_USER}/giraffe_test
 ```
 
-**Local visualization (if not pushed):**
-
-```bash
-python lerobot/scripts/visualize_dataset_html.py \
-  --repo-id ${HF_USER}/so100_test \
-  --local-files-only 1
-```
