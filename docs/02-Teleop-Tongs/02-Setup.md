@@ -29,7 +29,7 @@ You should start by cloning this repository. All of the commands below should be
 
 ### Build Your Interface
 
-You can 3D print the components required for the Teleop Tongs set up along with the fiducial markers by following the __[Teleop Tongs Assembly Guide](./teleop_tongs_assembly_guide.md)__.
+You can 3D print the components required for the Teleop Tongs set up along with the fiducial markers by following the [Assembly guide](./01-Assembly.md).
 
 You will need a camera, a ring light, and optionally a stand as shown in the following photo.
 
