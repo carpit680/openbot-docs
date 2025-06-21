@@ -20,7 +20,7 @@ keywords:
 
 ### Tools Required
 
-- Screwdriver *(PH1 and PH2 Bits needed)*
+- Screwdriver *(PH1 bit for self tapping screws and PH2 bit for M3 bolts)*
 
 ### Printing The Parts
 
@@ -53,6 +53,9 @@ When choosing a printer, keep the following recommended specifications in mind. 
 
 #### 3. Print The Parts
 
+<img src="/img/follower_3d_parts.jpeg" alt="Follower 3D Printed Parts" />
+
+---
 Print one of each part found in `/CAD/STL/common/` and `/CAD/STL/follower/`. The files are organized as follows:
 
 ### Follower Parts
@@ -70,6 +73,3 @@ Print one of each part found in `/CAD/STL/common/` and `/CAD/STL/follower/`. The
 - follower_clamp_base  
 - follower_wrist_2  
 - follower_gripper_finger  
-
-
-<img src="/img/follower_3d_parts.jpeg" alt="Follower 3D Printed Parts" style={{ width: "750px" }} />

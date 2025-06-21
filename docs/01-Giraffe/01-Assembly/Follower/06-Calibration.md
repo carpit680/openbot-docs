@@ -25,8 +25,6 @@ The calibration process is very important because it allows a neural network tra
 
 Run the following command or API example to calibrate the follower arm:
 
-<hfoptions id="calibrate_follower">
-<hfoption id="Command">
 
 ```bash
 python -m lerobot.calibrate \
@@ -34,9 +32,6 @@ python -m lerobot.calibrate \
     --robot.port=/dev/tty.usbmodem58760431551 \ # <- The port of your robot
     --robot.id=my_follower_arm # <- Give the robot a unique name
 ```
-
-</hfoption>
-<hfoption id="API example">
 
 ```python
 from lerobot.common.robots.giraffe_follower import GiraffeFollowerConfig, GiraffeFollower
@@ -52,7 +47,5 @@ follower.calibrate()
 follower.disconnect()
 ```
 
-</hfoption>
-</hfoptions>
 
 First, we have to move the robot to the position where each joint is in the middle of its range, then we press `Enter`. Secondly, we move all joints through their full range of motion. A video of this same process for the SO101 as reference can be found [here](https://huggingface.co/docs/lerobot/en/so101#calibration-video)

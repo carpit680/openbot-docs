@@ -22,6 +22,8 @@ keywords:
   - Open Source Software
   - Open Source Robotics
 ---
+<img src="/img/giraffe.jpg" alt="Giraffe v1.1 Kit" />
+---
 
 The **Giraffe v1.1 Kit** is an affordable, open-source 5-DOF robotic manipulator designed for hobbyists, educators, and researchers. Built around a lightweight, 3D-printed frame and high-torque Waveshare ST3215 servos, Giraffe offers a perfect balance of robustness, precision, and affordability. Its modular design includes:
 

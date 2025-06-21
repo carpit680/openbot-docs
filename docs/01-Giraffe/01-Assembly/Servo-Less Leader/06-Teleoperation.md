@@ -17,9 +17,11 @@ keywords:
   - Robotics
 ---
 
-<!-- @format -->
+import ReactPlayer from 'react-player'
 
 > **Important:** The following section provides only the teleoperation instructions for the follower arm. All installation, configuration, assembly, and calibration steps are omitted but are needed to move forward so make sure to finish them from [Follower Assembly](/docs/01-Giraffe/01-Assembly/Follower/01-Overview.md).
+
+<ReactPlayer playing controls url='/vid/teleop.mp4' width="100%" height="100%" />
 
 1. **Simple Teleoperation**
 

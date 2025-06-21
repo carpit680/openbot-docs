@@ -15,11 +15,15 @@ keywords:
   - Robotics
 ---
 
-<!-- @format -->
+import ReactPlayer from 'react-player'
 
 > Solder the power and data wires to all the sensors before assembly.
 
 ### Step 1: Sensor Casing
+
+<ReactPlayer playing controls url='/vid/leader_assembly_2.mp4'/>
+
+<br/>
 
 - Place the AS5600 sensor in the base.
 - Press the magnet into the rotating shaft, aligned with the AS5600 sensor to enable angle sensing.

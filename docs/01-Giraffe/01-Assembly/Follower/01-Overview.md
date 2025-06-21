@@ -27,12 +27,12 @@ This document provides complete instructions for using OpenBot Giraffe Follower 
   <img
     src="/img/follower_render.jpeg"
     alt="Follower Render"
-    style={{ width: "500px" }}
+    style={{ width: "50%" }}
   />
   <img
     src="/img/follower_real.jpeg"
     alt="Follower Real"
-    style={{ width: "500px" }}
+    style={{ width: "50%" }}
   />
 </div>
 

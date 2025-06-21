@@ -14,10 +14,16 @@ keywords:
   - Open Source Robotics
   - Robotics
 ---
+import ReactPlayer from 'react-player'
 
-> <span style={{ color: "red", fontWeight: "bold"}}>Important</span>:- **Make sure to install servo Horns in correct orientations only after motor config** (This is to make sure the actual zero point of the servo encoder is in the middle so that we can rotate about 180 degrees in either direction.)
+> ⚠️ <span style={{ color: "red", fontWeight: "bold"}}>IMPORTANT</span>: **Make sure to install servo Horns in correct orientations only after motor config** (This is to make sure the actual zero point of the servo encoder is in the middle so that we can rotate about 180 degrees in either direction.)
 
-> NOTE: _Lerobot installation required. For instructions, refer to [Lerobot Setup](/docs/Giraffe/LeRobot/lerobot_setup)._
+> 📝 <span style={{ color: "yellow", fontWeight: "bold"}}>NOTE</span>: _Lerobot installation required. For instructions, refer to [Lerobot Setup](/docs/Giraffe/LeRobot/lerobot_setup)._
+
+## Motor Configuration Video
+<ReactPlayer playing controls url='/vid/motor_config.mp4'/>
+
+
 
 ### 1. Find the USB ports associated to Follower arm
 
@@ -56,11 +62,17 @@ sudo chmod 666 /dev/ttyACM1
 
 ### 2. Motor Config
 
-#### a. Set IDs for all 6 motors
+#### a. Set the motors ids and baudrates
+
+Each motor is identified by a unique id on the bus. When brand new, motors usually come with a default id of 1. For the communication to work properly between the motors and the controller, we first need to set a unique, different id to each motor. Additionally, the speed at which data is transmitted on the bus is determined by the baudrate. In order to talk to each other, the controller and all the motors need to be configured with the same baudrate.
+
+To that end, we first need to connect to each motor individually with the controller in order to set these. Since we will write these parameters in the non-volatile section of the motors’ internal memory (EEPROM), we’ll only need to do this once.
+
+If you are repurposing motors from another robot, you will probably also need to perform this step as the ids and baudrate likely won’t match.
 
 Connect the usb cable from your computer and the power supply to the follower arm's controller board. Then, run the following command or run the API example with the port you got from the previous step. You'll also need to give your leader arm a name with the `id` parameter.
 
-For a visual reference on how to set the motor ids please refer to [this video](https://huggingface.co/docs/lerobot/en/so101#setup-motors-video) where we follow the process for the SO101 arm.
+For a visual reference on how to setup the motorsplease refer to the attached video above.
 
 <hfoptions id="setup_motors">
 <hfoption id="Command">
@@ -120,7 +132,22 @@ You can disconnect the 3-pin cable from the controller board, but you can leave 
 
 Repeat the operation for each motor as instructed.
 
-> [!TIP]
-> Check your cabling at each step before pressing Enter. For instance, the power supply cable might disconnect as you manipulate the board.
+> 💡 <span style={{ color: "green", fontWeight: "bold"}}>TIP</span>: Check your cabling at each step before pressing Enter. For instance, the power supply cable might disconnect as you manipulate the board.
 
-When you are done, the script will simply finish, at which point the motors are ready to be used. You can now plug the 3-pin cable from each motor to the next one, and the cable from the first motor (the 'shoulder pan' with id=1) to the controller board, which can now be attached to the base of the arm.
+When you are done, the script will simply finish, at which point the motors are ready to attach servo horns.
+
+> ⚠️ <span style={{ color: "red", fontWeight: "bold"}}>WARNING</span>: Do not move the servo shaft after configuration.
+
+### 3. Attach Servo Horns
+
+Attach servo horns according to the following table:
+
+| Servo 1  | Servo 2 | Servo 3 |
+|---------|---------|---------|
+| <img src="/img/servo_plus.png" alt="Servo Plus Orientation" /> | <img src="/img/servo_plus.png" alt="Servo Plus Orientation" /> | <img src="/img/servo_plus.png" alt="Servo Plus Orientation" /> |
+
+| Servo 4 | Servo 5 | Servo 6 |
+|---------|---------|---------|
+| <img src="/img/servo_cross.png" alt="Servo Cross Orientation" /> | <img src="/img/servo_plus.png" alt="Servo Plus Orientation" /> | <img src="/img/servo_plus.png" alt="Servo Plus Orientation" /> |
+
+> ⚠️ <span style={{ color: "red", fontWeight: "bold"}}>WARNING</span>: Do not move the servo shaft after servo horn installation.

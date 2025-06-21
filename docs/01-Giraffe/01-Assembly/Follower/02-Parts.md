@@ -28,6 +28,6 @@ keywords:
 | 12V 5A 60W Power Supply with 5.5mm DC Plug | 1                | ₹403.00              | [Robu.in](https://robu.in/product/orange-ac-100-240v-to-dc-12v-5a-60w-power-adapter/)                                                                                                                                                                                                                                                                                                                                                |
 | Total                                      | ---              | ₹12,935              | ---                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
-<img src="/img/follower_all_parts.jpeg" alt="Follower All Parts" style={{ width: "850px" }} />
-
 ---
+
+<img src="/img/follower_all_parts.jpeg" alt="Follower All Parts" />

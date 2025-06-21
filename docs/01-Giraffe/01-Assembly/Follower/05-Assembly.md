@@ -12,12 +12,14 @@ keywords:
   - Open Source Robotics
 ---
 
-<!-- @format -->
+import ReactPlayer from 'react-player'
 
-<span style={{ color: "red", fontWeight: "bold" }}>Important:</span> Servo horns must be mounted in a “+” orientation on every joint except Joint 4, which requires an “X” orientation.
-> **Assembly video coming soon**
+> ⚠️ <span style={{ color: "red", fontWeight: "bold"}}>IMPORTANT</span>: Servo horns must be in a "+" orientation on every joint except Joint 4, which requires an "X" orientation during assembly.
 
 ### Base and First Motor
+
+<ReactPlayer playing controls url='/vid/follower_assembly_1.mp4'/>
+<br/>
 
 1. **Insert and Mount First Motor**:
    - Attach Follower Clamp base to base by screwing in the follower base retainers with M2.5 screws.
@@ -29,36 +31,62 @@ keywords:
    - Insert the shoulder pan retainer and fasten it with one M2.5 screw on each side.
    - Route the wire to robot's back where servo bus is mounted and insert the wire into the bus.
 
+---
+
 ### Second Motor and Upper Arm
+
+<ReactPlayer playing controls url='/vid/follower_assembly_2.mp4'/>
+<br/>
 
 2. **Install and Connect Second Motor**:
    - Slide the second motor into the shoulder pan from the top and connect the wire to the other connector on the servo bus.
    - Secure the second motor with four M2.5 screws and attach both motor horns in a **+** position, tightening driving horn with an M3 bolt.
    - Install the shoulder lift in zero position to second motor using four M3 bolts on each side.
 
+---
+
 ### Third Motor and Elbow
+
+<ReactPlayer playing controls url='/vid/follower_assembly_3.mp4'/>
+<br/>
 
 3. **Mount Third Motor and Attach Forearm**:
    - Route the wire from motor 2 and connect it to motor 3.
    - Secure motor 3 using four M2.5 screws and attach both motor horns in a **+** position, securing driving horn with an M3 bolt.
    - Attach the elbow in zero position using four M3 bolts on each side.
 
-### Fourth Motor and Wrist
+---
 
-4. **Install Motor 4 and Wrist**:
+### Fourth and Fifth Motor with Wrist 1
+
+<ReactPlayer playing controls url='/vid/follower_assembly_4.mp4'/>
+<br/>
+
+1. **Install Motor 4**:
    - Insert motor 4, connect it to motor 3's cable.
    - Secure motor 4 with four M2.5 screws and attach both motor horns in **X** position, securing driving horn with an M3 bolt.
-   - Insert motor 5 into the wrist, secure it with four M2.5 screws, and connect it to motor 4.
-   - Mount the wrist in zero position onto motor 4 with four M3 bolts on both sides.
+2. **Install Motor 5 onto Wrist 1**:
+   - Insert motor 5 into the wrist_1, secure it with four M2.5 screws.
+3. **Mount Wrist 1 onto Motor 4**:
+   - Mount the wrist_1 in zero position onto motor 4 with four M3 bolts on both sides and connect motor 5 to motor 4.
    - Attach driving horn to motor 5 in a **+** position and secure it with an M3 bolt.
 
-### Gripper and Controller
+---
 
-5. **Install Gripper and Controller**:
-   - Attach the gripper to motor 5 and insert the gripper motor.
+### Wrist 2 and Gripper
+
+<ReactPlayer playing controls url='/vid/follower_assembly_5.mp4'/>
+<br/>
+
+1. **Install Wrist 2 and Gripper**:
+   - Attach the wrist_2 to motor 5 and insert the gripper motor.
    - Connect the second wire from motor 5 to the gripper motor.
-   - Attach the motor horns in **+** position, securing driving horn with an M3 bolt, then fasten the gripper claw using four M3 bolts on each side.
+   - Attach the motor horns in **+** position, securing driving horn with an M3 bolt, then fasten the gripper using four M3 bolts on each side.
 
 ---
 
 **Assembly complete!**
+
+Your finished Giraffe follower arm should look like this:
+
+<img src="/img/zero_pos.jpg" alt="Follower Arm Assembly Complete" />
