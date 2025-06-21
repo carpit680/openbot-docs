@@ -23,6 +23,8 @@ keywords:
   - Open Source Robotics
 ---
 
+<img src="/vid/tongs_demo.gif" alt="Teleop Tongs Demo" style={{width: "100%"}}/>
+
 Teleop Tongs support performing efficient multijoint movement with Giraffe built on top of [Dex Teleop](https://github.com/hello-robot/stretch_dex_teleop) (for the [Stretch 3](https://hello-robot.com/stretch-3-product) mobile manipulator by [Hello Robot](https://hello-robot.com/)) and customized to work with any 5-7 DoF manipulators.
 
 The human operator uses modified kitchen tongs or 3D-printed tongs with attached ArUco markers to control the pose of the end effector. A webcam looking up from a stand placed on the ground observes the tongs to estimate their position, orientation, and grip width. A ring light around the webcam reduces motion blur so that the ArUco markers can be detected during fast motions.
