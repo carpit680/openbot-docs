@@ -134,3 +134,9 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Large video files (use external hosting instead)
+static/vid/*.mp4
+static/vid/*.gif
+static/vid/*.mov
+static/vid/*.avi
