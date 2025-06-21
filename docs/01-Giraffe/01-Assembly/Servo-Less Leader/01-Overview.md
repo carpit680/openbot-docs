@@ -27,12 +27,12 @@ This document provides complete instructions for using AS5600 magnetic encoders 
   <img
     src="/img/leader_render.jpeg"
     alt="Follower Render"
-    style={{ width: "50%" }}
+    style={{ width: "49%" }}
   />
   <img
     src="/img/leader.jpg"
     alt="Follower Render"
-    style={{ width: "50%" }}
+    style={{ width: "49%" }}
   />
 </div>
 
