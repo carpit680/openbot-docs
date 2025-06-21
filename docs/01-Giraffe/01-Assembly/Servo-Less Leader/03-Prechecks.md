@@ -17,10 +17,9 @@ keywords:
 
 <!-- @format -->
 
-
 ## Tools Required
 
-- Screwdriver *(PH1 and PH2 Bits needed)*
+- Screwdriver _(PH1 and PH2 Bits needed)_
 - Soldering Iron and Wire
 - Flush Cutter
 
@@ -46,7 +45,7 @@ When choosing a printer, keep the following recommended specifications in mind. 
   - Putty Knife
 
 - **Setup and Printing Process:**
-  1. Calibrate the printer and level the print bed following your printer’s specific instructions.
+  1. Calibrate the printer and level the print bed following your printer's specific instructions.
   2. Clean the print bed, removing any dust or grease. If you use water or other cleaning agents, ensure the bed is fully dry.
   3. Apply a thin, even layer of glue to the print area. Avoid uneven application or clumps.
   4. Load the printer filament according to the printer's guidelines.
@@ -75,25 +74,25 @@ Print one of each part found in `/CAD/STL/common/` and `/CAD/STL/leader/`. The f
 - leader_gripper_finger
 
 > **Note on Joint 5 & 6:**  
-> Joints 5 and 6 use the “AS5600_Servo_2” variant. This variant has a different design and no idle shaft.
+> Joints 5 and 6 use the "AS5600_Servo_2" variant. This variant has a different design and no idle shaft.
 
 <div style={{ display: "flex", gap: "10px" }}>
-  <div style={{ textAlign: "center" }}>
+  <div style={{ textAlign: "center", flex: "1" }}>
     <img
       src="/img/servo_1_render.jpeg"
       alt="Servo 1 Render"
-      style={{ width: "300px" }}
+      style={{ width: "100%", maxWidth: "300px" }}
     />
     <p>Servo 1</p>
   </div>
-  <div style={{ textAlign: "center" }}>
+  <div style={{ textAlign: "center", flex: "1" }}>
     <img
       src="/img/servo_2_render.jpeg"
       alt="Servo 2 Render"
-      style={{ width: "300px" }}
+      style={{ width: "100%", maxWidth: "300px" }}
     />
     <p>Servo 2</p>
   </div>
 </div>
 
-<img src="/img/leader_3d_parts.jpeg" alt="Leader 3D Printed Parts" style={{ width: "750px" }} />
+<img src="/img/leader_3d_parts.jpeg" alt="Leader 3D Printed Parts" style={{ width: "100%", maxWidth: "750px" }} />

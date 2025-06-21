@@ -55,8 +55,10 @@ To build Teleop Tongs, you will print the tongs and superglue two cubic containe
 
 ## Your Teleop Tongs should look somewhat like this
 
-<img src="/img/teleop_tongs_held_open.jpeg" width="45%"/>
-<img src="/img/teleop_tongs_held_closed.jpeg" width="45%"/>
+<div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+  <img src="/img/teleop_tongs_held_open.jpeg" width="45%" />
+  <img src="/img/teleop_tongs_held_closed.jpeg" width="45%" />
+</div>
 
 When supergluing a cube onto a tong, the cube should be flush with one edge of the tongs, and the cube’s edge should rest against the edge of the thicker end of the tong.
 
@@ -65,8 +67,11 @@ Once you’ve attached the cube, you need to attach four ArUco markers to each c
 You can use the following PDF file to print out the markers for the right-hand tongs. If you’d like to edit the file, you can use the Inkscape version.
 
 [Right-hand tongs PDF file](https://drive.google.com/file/d/1ViEcIBFxIBgyJmMSbwUu2KRaImCchBa-/view?usp=sharing)
-<img src="/img/right_hand_tongs1.jpg" width="45%"/>
-<img src="/img/right_hand_tongs2.jpg" width="45%"/>
+
+<div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+  <img src="/img/right_hand_tongs1.jpg" width="45%" />
+  <img src="/img/right_hand_tongs2.jpg" width="45%" />
+</div>
 
 When printing the files, you need to **be careful to print them with their defined dimensions**. However you create them, **you should measure the resulting markers to make sure that they have the correct dimensions and update them accordingly in the “dex_teleop_parameters.py” file**. The main ArUco pattern should be a 56 mm x 56 mm square. The outer edge of the white region surrounding the marker should be approximately 70 mm x 70 mm to fit on the sides of the cubes.
 
@@ -80,10 +85,12 @@ Quality: 1200 dpi
 
 You can use these photos to better see how the right-hand tongs should be built.
 
-<img src="/img/teleop_tongs_left.jpeg" width="45%"/>
-<img src="/img/teleop_tongs_right.jpeg" width="45%"/>
-<img src="/img/teleop_tongs_top.jpeg" width="45%"/>
-<img src="/img/teleop_tongs_bottom.jpeg" width="45%"/>
+<div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+  <img src="/img/teleop_tongs_left.jpeg" width="45%" />
+  <img src="/img/teleop_tongs_right.jpeg" width="45%" />
+  <img src="/img/teleop_tongs_top.jpeg" width="45%" />
+  <img src="/img/teleop_tongs_bottom.jpeg" width="45%" />
+</div>
 
 # Acknowledgment
 

@@ -2,66 +2,149 @@
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
+ *
+ * @format
  */
 
-You can override the default Infima variables here.
-:root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+You can override the default Infima variables here. :root {
+	--ifm-color-primary: #2e8555;
+	--ifm-color-primary-dark: #29784c;
+	--ifm-color-primary-darker: #277148;
+	--ifm-color-primary-darkest: #205d3b;
+	--ifm-color-primary-light: #33925d;
+	--ifm-color-primary-lighter: #359962;
+	--ifm-color-primary-lightest: #3cad6e;
+	--ifm-code-font-size: 95%;
+	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+[data-theme="dark"] {
+	--ifm-color-primary: #25c2a0;
+	--ifm-color-primary-dark: #21af90;
+	--ifm-color-primary-darker: #1fa588;
+	--ifm-color-primary-darkest: #1a8870;
+	--ifm-color-primary-light: #29d5b0;
+	--ifm-color-primary-lighter: #32d8b4;
+	--ifm-color-primary-lightest: #4fddbf;
+	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
 :root {
-  /* Light mode (default) */
-  --ifm-color-primary: #869abf;             /* Primary color */
-  --ifm-color-primary-dark: #697ca8;          /* Slightly darker */
-  --ifm-color-primary-darker: #536a90;        /* Even darker */
-  --ifm-color-primary-darkest: #3e5578;       /* Darkest variant */
-  --ifm-color-primary-light: #a2b1d0;         /* Lighter variant */
-  --ifm-color-primary-lighter: #b0bddc;       /* Even lighter */
-  --ifm-color-primary-lightest: #c1c9e7;      /* Lightest variant */
-  
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(25, 26, 35, 0.1);
-  
-  /* Overall text and background for light mode */
-  --ifm-text-color: #000;
-  --ifm-background-color: #f1f1f1;
+	/* Light mode (default) */
+	--ifm-color-primary: #869abf; /* Primary color */
+	--ifm-color-primary-dark: #697ca8; /* Slightly darker */
+	--ifm-color-primary-darker: #536a90; /* Even darker */
+	--ifm-color-primary-darkest: #3e5578; /* Darkest variant */
+	--ifm-color-primary-light: #a2b1d0; /* Lighter variant */
+	--ifm-color-primary-lighter: #b0bddc; /* Even lighter */
+	--ifm-color-primary-lightest: #c1c9e7; /* Lightest variant */
+
+	--ifm-code-font-size: 95%;
+	--docusaurus-highlighted-code-line-bg: rgba(25, 26, 35, 0.1);
+
+	/* Overall text and background for light mode */
+	--ifm-text-color: #000;
+	--ifm-background-color: #f1f1f1;
 }
 
 [data-theme="dark"] {
-  /* Dark mode: you can decide to keep the same primary or adjust for better contrast */
-  --ifm-color-primary: #869abf;              /* Same primary */
-  /* For dark mode, it can help to have primary variations that are a bit brighter to stand out on a dark background */
-  --ifm-color-primary-dark: #9faee2;          /* Lighter than light mode’s dark variant */
-  --ifm-color-primary-darker: #acbff0;
-  --ifm-color-primary-darkest: #b9d0ff;
-  --ifm-color-primary-light: #7685b0;
-  --ifm-color-primary-lighter: #6571a0;
-  --ifm-color-primary-lightest: #546090;
-  
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(241, 241, 241, 0.1);
-  
-  /* Overall text and background for dark mode */
-  --ifm-text-color: #f1f1f1;
-  --ifm-background-color: #191a23;
+	/* Dark mode: you can decide to keep the same primary or adjust for better contrast */
+	--ifm-color-primary: #869abf; /* Same primary */
+	/* For dark mode, it can help to have primary variations that are a bit brighter to stand out on a dark background */
+	--ifm-color-primary-dark: #9faee2; /* Lighter than light mode's dark variant */
+	--ifm-color-primary-darker: #acbff0;
+	--ifm-color-primary-darkest: #b9d0ff;
+	--ifm-color-primary-light: #7685b0;
+	--ifm-color-primary-lighter: #6571a0;
+	--ifm-color-primary-lightest: #546090;
+
+	--ifm-code-font-size: 95%;
+	--docusaurus-highlighted-code-line-bg: rgba(241, 241, 241, 0.1);
+
+	/* Overall text and background for dark mode */
+	--ifm-text-color: #f1f1f1;
+	--ifm-background-color: #191a23;
+}
+
+/* Responsive media rules to prevent overflow on mobile devices */
+img,
+video {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Ensure images and videos don't overflow their containers */
+.markdown img,
+.markdown video {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Target Docusaurus specific markdown content */
+.theme-doc-markdown img,
+.theme-doc-markdown video,
+[class*="markdown"] img,
+[class*="markdown"] video {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Ensure flex containers don't wrap on desktop */
+.markdown div[style*="display: flex"],
+.theme-doc-markdown div[style*="display: flex"],
+[class*="markdown"] div[style*="display: flex"] {
+	flex-wrap: nowrap;
+}
+
+/* Responsive design for different screen sizes */
+@media (max-width: 768px) {
+	/* Mobile devices */
+	img,
+	video {
+		max-width: 100%;
+		width: 100% !important; /* Override inline styles */
+	}
+
+	/* Override any fixed pixel widths on mobile */
+	img[style*="width"],
+	video[style*="width"] {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+
+	/* Target Docusaurus specific markdown content on mobile */
+	.theme-doc-markdown img,
+	.theme-doc-markdown video,
+	[class*="markdown"] img,
+	[class*="markdown"] video {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+
+	/* Allow flex containers to wrap on mobile */
+	.markdown div[style*="display: flex"],
+	.theme-doc-markdown div[style*="display: flex"],
+	[class*="markdown"] div[style*="display: flex"] {
+		flex-wrap: wrap !important;
+	}
+}
+
+@media (max-width: 480px) {
+	/* Small mobile devices */
+	img,
+	video {
+		max-width: 100%;
+		width: 100% !important;
+	}
+
+	/* Target Docusaurus specific markdown content on small mobile */
+	.theme-doc-markdown img,
+	.theme-doc-markdown video,
+	[class*="markdown"] img,
+	[class*="markdown"] video {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
 }

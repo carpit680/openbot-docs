@@ -23,9 +23,11 @@ keywords:
   - Open Source Robotics
 ---
 
+<!-- @format -->
+
 # Setting Up Teleop-Tongs
 
-You should start by cloning this repository. All of the commands below should be run from the command line in the root directory of the repository on your robot's computer. 
+You should start by cloning this repository. All of the commands below should be run from the command line in the root directory of the repository on your robot's computer.
 
 ### Build Your Interface
 
@@ -33,12 +35,12 @@ You can 3D print the components required for the Teleop Tongs set up along with 
 
 You will need a camera, a ring light, and optionally a stand as shown in the following photo.
 
-<img src="/img/camera_ring_light_and_stand.jpeg" alt="Follower Arm Assembly Complete" style={{width: "40%"}}/>
+<img src="/img/camera_ring_light_and_stand.jpeg" alt="Follower Arm Assembly Complete" style={{width: "100%", maxWidth: "400px"}}/>
 
 For a single robot, you will need Teleop Tongs like those shown in the following two photos.
 
-<img src="/img/teleop_tongs_held_open.jpeg" width="45%"/>
-<img src="/img/teleop_tongs_held_closed.jpeg" width="45%"/>
+<img src="/img/teleop_tongs_held_open.jpeg" style={{width: "100%", maxWidth: "45%"}}/>
+<img src="/img/teleop_tongs_held_closed.jpeg" style={{width: "100%", maxWidth: "45%"}}/>
 
 ### Run the Installation Scripts
 
@@ -53,8 +55,9 @@ Then run the following installation script found in the repository's root direct
 ```bash
 ./install_dex_teleop.sh
 ```
+
 > :warning: **Warning**  
-> The device ID and Vendor ID used in the `99-teleop-tongs-camera.rules`, required below are specific to the camera I used. 
+> The device ID and Vendor ID used in the `99-teleop-tongs-camera.rules`, required below are specific to the camera I used.
 > If you are using a different camera, you will need to change the device ID and Vendor ID in this file.
 
 The installation script sets up udev rules for a Mi USB Webcam HD so that the camera can be reset each time you run dexterous teleoperation. This is a workaround to avoid low frame rates and errors in the camera settings.
