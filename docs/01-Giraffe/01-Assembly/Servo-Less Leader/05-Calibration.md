@@ -20,32 +20,34 @@ keywords:
 
 > NOTE: _Lerobot installation required. For instructions, refer to [Lerobot Setup](/docs/Giraffe/LeRobot/lerobot_setup)._
 
-### Initialize Leader Port and Run AS5600 Reader
+Do the same steps as the [follower arm](/docs/01-Giraffe/01-Assembly/Follower/06-Calibration.md) to calibrate the leader arm, run the following command or API example:
 
-To set up and read sensor values from the Leader arm, follow these steps:
+<hfoptions id="calibrate_leader">
+<hfoption id="Command">
 
-1. **Navigate to the LeRobot directory**:
+```bash
+python -m lerobot.calibrate \
+    --teleop.type=giraffe_leader \
+    --teleop.port=/dev/tty.usbmodem58760431551 \ # <- The port of your robot
+    --teleop.id=my_leader_arm # <- Give the robot a unique name
+```
 
-   ```bash
-   cd ~/lerobot
-   ```
+</hfoption>
+<hfoption id="API example">
 
-2. **Run the leader port detection script**:
+```python
+from lerobot.common.teleoperators.giraffe_leader import GiraffeLeaderConfig, GiraffeLeader
 
-   ```bash
-   python3 find_leader_port.py
-   ```
+config = GiraffeLeaderConfig(
+    port="/dev/tty.usbmodem58760431551",
+    id="my_leader_arm",
+)
 
-   This script will guide you to disconnect the USB for the Leader’s sensor board and automatically detect the correct serial port. It will then save the result to a file named `leader_port.txt`.
+leader = GiraffeLeader(config)
+leader.connect(calibrate=False)
+leader.calibrate()
+leader.disconnect()
+```
 
-3. **Run the AS5600 sensor reader**:
-
-   ```bash
-   python3 AS5600_reader.py
-   ```
-
-   On the first run, this script will detect that calibration data is missing and initiate a calibration process,simply follow the on-screen prompts to complete the calibration of your Leader arm.
-
-> This is a custom sensor‐only calibration that follows the same “zero → 90°” procedure as the [Follower](/docs/01-Giraffe/01-Assembly/Follower/06-Calibration.md).  
-> There is no “rest” position calibration needed.
-
+</hfoption>
+</hfoptions>

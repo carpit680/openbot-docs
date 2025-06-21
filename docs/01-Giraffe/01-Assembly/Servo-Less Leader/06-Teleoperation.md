@@ -24,22 +24,32 @@ keywords:
 1. **Simple Teleoperation**
 
    ```bash
-   python lerobot/scripts/control_robot.py \
-     --robot.type=so100 \
-     --robot.cameras='{}' \
-     --control.type=teleoperate
+   python -m lerobot.teleoperate \
+      --robot.type=giraffe_follower \
+      --robot.port=/dev/tty.usbmodem58760431541 \
+      --robot.id=my_follower_arm \
+      --teleop.type=giraffe_leader \
+      --teleop.port=/dev/tty.usbmodem58760431551 \
+      --teleop.id=my_leader_arm
    ```
 
-   This will start a simple Leader arm based teleoperation session. No camera feeds will be displayed.
+   The `teleoperate` command will automatically:
 
-2. **Teleop with Camera Feeds**  
+- Identify any missing calibrations and initiate the calibration procedure.
+- Connect the robot and teleop device, and start teleoperation.
+
+2. **Teleop with Camera Feeds**
 
    ```bash
-   python lerobot/scripts/control_robot.py \
-     --robot.type=so100 \
-     --robot.cameras='{"follower_cam": 0, "leader_cam": 1}' \
-     --control.type=teleoperate \
-     --control.display_data=true
+   python -m lerobot.teleoperate \
+    --robot.type=giraffe_follower \
+    --robot.port=/dev/tty.usbmodem58760431541 \
+    --robot.id=my_follower_arm \
+    --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 30}}" \
+    --teleop.type=giraffe_leader \
+    --teleop.port=/dev/tty.usbmodem58760431551 \
+    --teleop.id=my_leader_arm \
+    --display_data=true
    ```
 
    You will now see live video from both follower and leader camera streams, with joint states overlaid via `rerun`.
